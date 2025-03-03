@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales</title>
+    <style>
+        /* Global Styles */
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* Animación */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Headings */
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        /* Container centrado */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Redes Sociales */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .social-links li a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #00ffff;
+            border-radius: 50px;
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .social-links li a:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        /* Secciones de Contenido */
+        .content-section {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+        /* Contenedor de Loterías */
+        .lottery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .lottery {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #00ffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+        .lottery h3 {
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+        .lottery p {
+            text-align: center;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        /* Botón de Volver */
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            border: 2px solid #00ffff;
+            border-radius: 50px;
+            background: transparent;
+            color: #00ffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+            padding: 10px;
+            }
+            .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <!-- Redes Sociales -->
+        <section id="redes">
+            <h2>Redes Sociales</h2>
+            <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+        
+        <!-- Acerca de Nosotros -->
+        <section id="about" class="content-section">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+            Bienvenido a nuestro sitio futurista, donde la innovación y la tecnología se unen para ofrecerte la mejor experiencia online. Conéctate y descubre un mundo de posibilidades.
+            </p>
+        </section>
+        
+        <!-- Números de Loterías -->
+        <section id="loterias" class="content-section">
+            <h2>Números de Loterías</h2>
+            <p>
+            Descubre la magia de los números de las loterías dominicanas, donde cada sorteo se transforma en una experiencia épica.
+            </p>
+            <div class="lottery-container">
+            <div class="lottery">
+                <h3>Lotería Nacional</h3>
+                <p>04, 11, 18, 25, 32, 39</p>
+            </div>
+            <div class="lottery">
+                <h3>Lotería RD</h3>
+                <p>01, 14, 20, 29, 35, 49</p>
+            </div>
+            <div class="lottery">
+                <h3>Lotería Express</h3>
+                <p>06, 13, 21, 28, 37, 45</p>
+            </div>
+            <div class="lottery">
+                <h3>Lotería Premium</h3>
+                <p>08, 16, 24, 33, 41, 47</p>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Contacto -->
+        <section id="contact" class="content-section">
+            <h2>Contacto</h2>
+            <p>
+            ¿Tienes alguna consulta o sugerencia? Escríbenos y mantente informado de todas las novedades. Síguenos en nuestras redes sociales para estar al día.
+            </p>
+        </section>
+        
+        <!-- Botón de Volver Atrás -->
+        <button class="back-button" onclick="window.location.href='index.html'">Volver Atrás</button>
+        </div>
+    </body>
+    </html>

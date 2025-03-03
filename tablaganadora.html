@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Ganadora</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #69A6C7, #E4E5E6);
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #007acc;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(0,122,204,0.1);
+        }
+        .volver {
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007acc;
+            color: #fff;
+            padding: 12px 24px;
+            margin: 20px auto;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .volver:hover {
+            background-color: #005499;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        @media screen and (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .volver {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla Ganadora de los Números de RD de Hoy</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>03</td>
+                <td>Primer premio</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Segundo premio</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Tercer premio</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Cuarto premio</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Quinto premio</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Sexto premio</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>Séptimo premio</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>Octavo premio</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>Noveno premio</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>Décimo premio</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="index.html" class="volver">Volver atrás</a>
+</body>
+</html>
